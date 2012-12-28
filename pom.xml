@@ -6,7 +6,7 @@
   <parent>
     <groupId>org.drools</groupId>
     <artifactId>droolsjbpm-parent</artifactId>
-    <version>5.2.2-SNAPSHOT</version>
+    <version>5.2.1.Final</version>
   </parent>
 
   <groupId>org.drools</groupId>
@@ -14,6 +14,7 @@
   <packaging>pom</packaging>
 
   <name>Guvnor multiproject</name>
+  <version>5.2.1.Osde</version>
   <description>
     Guvnor is the web application and repository to govern Drools and jBPM assets.
   </description>
@@ -71,5 +72,45 @@
       </modules>
     </profile>
   </profiles>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>knowledge-api</artifactId>
+        <version>5.2.1.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-core</artifactId>
+        <version>5.2.1.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-compiler</artifactId>
+        <version>5.2.1.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-verifier</artifactId>
+        <version>5.2.1.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-templates</artifactId>
+        <version>5.2.1.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-decisiontables</artifactId>
+        <version>5.2.1.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jbpm</groupId>
+        <artifactId>jbpm-bpmn2</artifactId>
+        <version>5.1.1.Final</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
 
 </project>
