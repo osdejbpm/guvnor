@@ -5,10 +5,11 @@
   <parent>
     <groupId>org.drools</groupId>
     <artifactId>guvnor</artifactId>
-    <version>5.3.6-SNAPSHOT</version>
+    <version>5.3.5.Final</version>
   </parent>
 
   <artifactId>droolsjbpm-ide-common</artifactId>
+  <version>5.3.5.Osde</version>
   <packaging>jar</packaging>
   
   <name>Drools and jBPM IDE common</name>
