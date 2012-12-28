@@ -6,13 +6,14 @@
   <parent>
     <groupId>org.drools</groupId>
     <artifactId>droolsjbpm-parent</artifactId>
-    <version>5.5.1-SNAPSHOT</version>
+    <version>5.5.0.Final</version>
     <!-- relativePath causes out-of-date problems on hudson slaves -->
     <!--<relativePath>../droolsjbpm-build-bootstrap/pom.xml</relativePath>-->
   </parent>
 
   <groupId>org.drools</groupId>
   <artifactId>guvnor</artifactId>
+  <version>5.5.0.Osde</version>
   <packaging>pom</packaging>
 
   <name>Guvnor multiproject</name>
@@ -112,4 +113,151 @@
     </profile>
   </profiles>
 
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>knowledge-api</artifactId>
+        <version>5.5.0.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>guvnor-api</artifactId>
+        <version>5.5.0.Osde</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>guvnor-api</artifactId>
+        <classifier>sources</classifier>
+        <version>5.5.0.Osde</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>guvnor-examples</artifactId>
+        <version>5.5.0.Osde</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>guvnor-examples</artifactId>
+        <classifier>sources</classifier>
+        <version>5.5.0.Osde</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>guvnor-docs</artifactId>
+        <type>jdocbook</type>
+        <version>5.5.0.Osde</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>droolsjbpm-ide-common</artifactId>
+        <classifier>sources</classifier>
+        <version>5.5.0.Osde</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>droolsjbpm-ide-common</artifactId>
+        <version>5.5.0.Osde</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>guvnor-repository</artifactId>
+        <version>5.5.0.Osde</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>guvnor-repository</artifactId>
+        <type>test-jar</type>
+        <version>5.5.0.Osde</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>guvnor-repository</artifactId>
+        <classifier>sources</classifier>
+        <version>5.5.0.Osde</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>guvnor-repository-connector-jcr</artifactId>
+        <version>5.5.0.Osde</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>guvnor-repository-connector-jcr</artifactId>
+        <classifier>sources</classifier>
+        <version>5.5.0.Osde</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>guvnor-repository-connector-jackrabbit</artifactId>
+        <version>5.5.0.Osde</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>guvnor-repository-connector-jackrabbit</artifactId>
+        <classifier>sources</classifier>
+        <version>5.5.0.Osde</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>guvnor-repository-connector-modeshape</artifactId>
+        <version>5.5.0.Osde</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>guvnor-repository-connector-modeshape</artifactId>
+        <classifier>sources</classifier>
+        <version>5.5.0.Osde</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>guvnor-webapp-core</artifactId>
+        <classifier>sources</classifier>
+        <version>5.5.0.Osde</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>guvnor-webapp-core</artifactId>
+        <type>test-jar</type>
+        <version>5.5.0.Osde</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>guvnor-webapp-core</artifactId>
+        <version>5.5.0.Osde</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>guvnor-webapp-drools</artifactId>
+        <type>war</type>
+        <version>5.5.0.Osde</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>guvnor-distribution-wars</artifactId>
+        <version>5.5.0.Osde</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>guvnor-distribution-wars</artifactId>
+        <type>war</type>
+        <classifier>jboss-eap-5.1</classifier>
+        <version>5.5.0.Osde</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>guvnor-distribution-wars</artifactId>
+        <type>war</type>
+        <classifier>tomcat-6.0</classifier>
+        <version>5.5.0.Osde</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>guvnor-distribution-wars</artifactId>
+        <type>war</type>
+        <classifier>jboss-as-7.0</classifier>
+        <version>5.5.0.Osde</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
 </project>
