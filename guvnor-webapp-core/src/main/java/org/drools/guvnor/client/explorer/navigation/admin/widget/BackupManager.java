@@ -66,6 +66,11 @@ public class BackupManager extends Composite {
 
         widtab.endSection();
 
+        widtab.startSection( "Import/Export package title" );
+        widtab.addHeader( GuvnorImages.INSTANCE.EditCategories(),
+                          new HTML( "<strong>Import/Export package</strong>" ) );
+        widtab.endSection();
+
         /*
          * Package import/export 
          */
